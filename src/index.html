@@ -101,11 +101,11 @@
                     </div>
                 </div>
             </div>
-            <div class='scroll1'>222</div>
-            <div class="scroll3">333</div>
+            <div class='scroll'>222</div>
+            <div class="scroll">333</div>
         </section>
 
-        <!--<footer>
+        <footer>
             <div class='img'>
                 <ul>
                     <li>
@@ -125,7 +125,7 @@
 
                 </ul>
             </div>
-        </footer>-->
+        </footer>
     </div>
 </body>
 
@@ -145,7 +145,7 @@
     $('list li a').on('click', function() {
         alert(1);
         var index = $(this).index();
-        $('section ').eq(index).show().siblings().hide();
+        $('section .scroll').eq(index).show().siblings().hide();
     })
     $.ajax({
         url: '/list',
